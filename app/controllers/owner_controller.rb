@@ -7,9 +7,11 @@ class OwnersController < ApplicationController
 
   def create
     @owner = Owner.new(fournisseur_params)
+    @owner.save
   end
 
   def show
+
   end
 
   def edit
